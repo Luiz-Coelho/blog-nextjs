@@ -5,7 +5,8 @@ services:
       target: dev
       dockerfile: Dockerfile
     environment:
-      ENV_NODE: development
+      NODE_ENV: development
+      WATCHPACK_POLLING: true
     container_name: blog-nextjs-app
     ports:
       - "3000:3000"
